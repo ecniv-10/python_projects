@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "medication-reminder"
+version = "0.1.0"
+description = ""
+authors = ["nzxhvr <devops23345@gmail.com>"]
+readme = "README.md"
+packages = [{include = "medication_reminder"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+twilio = "^9.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
