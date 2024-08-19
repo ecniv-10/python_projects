@@ -54,12 +54,12 @@ def sendSMS(p, med, tod, dow):
             'Hello ' + p.get_patient_full_name() + ' this is your medsSMS alert to remind you it is time for your ' +
             med + ' to be taken at ' + get_TOD_string(tod) + ' on this day ')
     headers = {
-        'Authorization': 'Bearer 26f97ec6383e4e84aeff66316b187eb9',
+        'Authorization': 'Bearer ????', #requies authorization code
         'Content-Type': 'application/json',
     }
 
     json_data = {
-        'from': '12085813944',
+        'from': '???', #provided by SMS provider
         'to': [
             '+1' + p.get_SMS_number(),
         ],
